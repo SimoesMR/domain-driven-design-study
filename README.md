@@ -1,20 +1,18 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+# Domain Drive Design Project in C#
+This project is an application developed in C# using the principles of Domain-Driven Design (DDD). The goal is to provide a solid foundation for scalable, organized, and maintainable applications.
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+# 📖 Overview
+This project was developed with the following main objectives:
+Clear separation of responsibilities following DDD concepts.
+CPF validation and system function-related queries.
+Scalability and flexibility to meet new requirements.
+Support for programming best practices such as SOLID and Clean Code.
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+💻 Technologies Used
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
-
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+The main technologies and frameworks used in the project include:
+.NET 7
+Entity Framework Core
+AutoMapper
+FluentValidation
+Swagger (for API documentation)
