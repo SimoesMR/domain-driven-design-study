@@ -2,6 +2,8 @@ using Api.Filters;
 using Api.Middleware;
 using Application;
 using Infrastructure;
+using Infrastructure.Migrations;
+using Microsoft.Extensions.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -37,4 +39,11 @@ app.UseAuthorization();
 
 app.MapControllers();
 
+Migratedabase();
+
 app.Run();
+
+void Migratedabase()
+{
+   DatabaseMigration.Migrate(builder.Configuration.GetConnectionString("Connection")!);
+}
