@@ -14,7 +14,7 @@ namespace Api.Filters
             if(context.Exception is ExceptionBase)
                 HandleProjectException(context);
             else
-                TrhowUnknowException(context);
+                ThrowUnknowException(context);
   
         }
 
@@ -29,7 +29,7 @@ namespace Api.Filters
             }
         }
 
-        private void TrhowUnknowException(ExceptionContext context)
+        private void ThrowUnknowException(ExceptionContext context)
         {
             context.HttpContext.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
             context.Result = new ObjectResult(new ResponseErrorJson(MessagesException.UNKOWN_ERROR));
