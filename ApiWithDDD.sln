@@ -11,17 +11,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Backend", "Backend", "{DFFF
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{BAF2AFB1-F61E-4FFE-92B5-4398BFA60839}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Comunication", "src\Shared\Comunication\Comunication.csproj", "{EB9A68F6-4512-4C89-9929-3A742D7C8D14}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Comunication", "src\Shared\Comunication\Comunication.csproj", "{EB9A68F6-4512-4C89-9929-3A742D7C8D14}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exceptions", "src\Shared\Exceptions\Exceptions.csproj", "{67428AAF-039D-45D3-ADB8-2CDDD0B930B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exceptions", "src\Shared\Exceptions\Exceptions.csproj", "{67428AAF-039D-45D3-ADB8-2CDDD0B930B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "src\Backend\Infrastructure\Infrastructure.csproj", "{BFA4EA20-A9DB-4857-8B11-8786459BAA86}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "src\Backend\Infrastructure\Infrastructure.csproj", "{BFA4EA20-A9DB-4857-8B11-8786459BAA86}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "src\Backend\Application\Application.csproj", "{672C672E-A5C2-437C-B78D-6F0C1D9D4D10}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "src\Backend\Application\Application.csproj", "{672C672E-A5C2-437C-B78D-6F0C1D9D4D10}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "src\Backend\Domain\Domain.csproj", "{FC61F476-2CF3-400C-99F1-C08B56AC405D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "src\Backend\Domain\Domain.csproj", "{FC61F476-2CF3-400C-99F1-C08B56AC405D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api", "src\Backend\Api\Api.csproj", "{0EB196AE-F5D7-4D8A-B157-EEE3038B8551}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api", "src\Backend\Api\Api.csproj", "{0EB196AE-F5D7-4D8A-B157-EEE3038B8551}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Validators.Test", "tests\Validators.Test\Validators.Test.csproj", "{3D712496-60F3-4CF1-806D-4E90C7BE1F32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonTestUtilities", "tests\CommonTestUtilities\CommonTestUtilities.csproj", "{072EB88C-5DA7-47C1-88A5-C464E8849484}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,6 +57,14 @@ Global
 		{0EB196AE-F5D7-4D8A-B157-EEE3038B8551}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0EB196AE-F5D7-4D8A-B157-EEE3038B8551}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0EB196AE-F5D7-4D8A-B157-EEE3038B8551}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D712496-60F3-4CF1-806D-4E90C7BE1F32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D712496-60F3-4CF1-806D-4E90C7BE1F32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D712496-60F3-4CF1-806D-4E90C7BE1F32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D712496-60F3-4CF1-806D-4E90C7BE1F32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{072EB88C-5DA7-47C1-88A5-C464E8849484}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{072EB88C-5DA7-47C1-88A5-C464E8849484}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{072EB88C-5DA7-47C1-88A5-C464E8849484}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{072EB88C-5DA7-47C1-88A5-C464E8849484}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -66,6 +78,8 @@ Global
 		{672C672E-A5C2-437C-B78D-6F0C1D9D4D10} = {DFFF55DE-53C5-4948-BA48-79C9A7EA9B4C}
 		{FC61F476-2CF3-400C-99F1-C08B56AC405D} = {DFFF55DE-53C5-4948-BA48-79C9A7EA9B4C}
 		{0EB196AE-F5D7-4D8A-B157-EEE3038B8551} = {DFFF55DE-53C5-4948-BA48-79C9A7EA9B4C}
+		{3D712496-60F3-4CF1-806D-4E90C7BE1F32} = {0DC4395F-8FCC-428F-8863-DC847F7787C2}
+		{072EB88C-5DA7-47C1-88A5-C464E8849484} = {0DC4395F-8FCC-428F-8863-DC847F7787C2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0B7CDD57-17D2-4BEA-BA08-9A5B06C8A5FF}
