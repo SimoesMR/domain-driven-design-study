@@ -12,8 +12,11 @@ namespace Application.UseCases.User.Register
         {
             RuleFor(user => user.Name).NotEmpty().WithMessage(MessagesException.NAME_EMPTY);
             RuleFor(user => user.Email).NotEmpty().WithMessage(MessagesException.EMAIL_EMPTY);
-            RuleFor(user => user.Email).EmailAddress().WithMessage(MessagesException.EMAIL_INVALID);
             RuleFor(user => user.Password.Length).GreaterThanOrEqualTo(6).WithMessage(MessagesException.PASSWORD_INVALID);
+            When(user => string.IsNullOrEmpty(user.Email) == false, () =>
+            {
+                RuleFor(user => user.Email).EmailAddress().WithMessage(MessagesException.EMAIL_INVALID);
+            });
         }
     }
 }
