@@ -49,7 +49,7 @@ namespace Application.UseCases.User.Register
             await _unitOfWork.Commit();
 
             return new ResponseRegisteredUserJson {
-                Name = request.Name
+                Name = user.Name
             };
         }
 

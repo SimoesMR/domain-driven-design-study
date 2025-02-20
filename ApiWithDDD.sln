@@ -23,9 +23,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "src\Backend\Domai
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api", "src\Backend\Api\Api.csproj", "{0EB196AE-F5D7-4D8A-B157-EEE3038B8551}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Validators.Test", "tests\Validators.Test\Validators.Test.csproj", "{3D712496-60F3-4CF1-806D-4E90C7BE1F32}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Validators.Test", "tests\Validators.Test\Validators.Test.csproj", "{3D712496-60F3-4CF1-806D-4E90C7BE1F32}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonTestUtilities", "tests\CommonTestUtilities\CommonTestUtilities.csproj", "{072EB88C-5DA7-47C1-88A5-C464E8849484}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonTestUtilities", "tests\CommonTestUtilities\CommonTestUtilities.csproj", "{072EB88C-5DA7-47C1-88A5-C464E8849484}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UseCases.Test", "tests\UseCases.Test\UseCases.Test.csproj", "{06870E89-D174-4D24-A521-3751AF650584}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -65,6 +67,10 @@ Global
 		{072EB88C-5DA7-47C1-88A5-C464E8849484}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{072EB88C-5DA7-47C1-88A5-C464E8849484}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{072EB88C-5DA7-47C1-88A5-C464E8849484}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06870E89-D174-4D24-A521-3751AF650584}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06870E89-D174-4D24-A521-3751AF650584}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06870E89-D174-4D24-A521-3751AF650584}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06870E89-D174-4D24-A521-3751AF650584}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -80,6 +86,7 @@ Global
 		{0EB196AE-F5D7-4D8A-B157-EEE3038B8551} = {DFFF55DE-53C5-4948-BA48-79C9A7EA9B4C}
 		{3D712496-60F3-4CF1-806D-4E90C7BE1F32} = {0DC4395F-8FCC-428F-8863-DC847F7787C2}
 		{072EB88C-5DA7-47C1-88A5-C464E8849484} = {0DC4395F-8FCC-428F-8863-DC847F7787C2}
+		{06870E89-D174-4D24-A521-3751AF650584} = {0DC4395F-8FCC-428F-8863-DC847F7787C2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0B7CDD57-17D2-4BEA-BA08-9A5B06C8A5FF}

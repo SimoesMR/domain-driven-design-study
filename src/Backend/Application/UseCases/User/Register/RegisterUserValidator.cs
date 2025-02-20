@@ -1,7 +1,6 @@
 ﻿using Comunication.Request;
-using Comunication.Response;
-using FluentValidation;
 using Exceptions;
+using FluentValidation;
 
 namespace Application.UseCases.User.Register
 {
