@@ -6,12 +6,10 @@ namespace CommonTestUtilities.Repositories
 {
     public class UserReadOnlyRepositoryBuilder
     {
-        public static IUserReadOnlyRepository Build()
-        {
-            //only work with interface
-            var mock = new Mock<IUserReadOnlyRepository>();
+        private readonly Mock<IUserReadOnlyRepository> _repository;
 
-            return mock.Object;
-        }
+        public UserReadOnlyRepositoryBuilder() => _repository = new Mock<IUserReadOnlyRepository>();
+
+        public IUserReadOnlyRepository Build() => _repository.Object;
     }
 }
